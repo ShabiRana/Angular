@@ -1,0 +1,80 @@
+.navbar {
+    background-color: #3f51b5;
+    height: 55px;
+    position: relative;
+  }
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 5px;
+  }
+  .navbar ul li button {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+  }
+  .navbar ul li button:hover {
+    background-color: rgb(96, 69, 248);
+    width: 100%;
+    border: none;
+  }
+  .navbar ul li a {
+    margin: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.84);
+    text-decoration: none;
+  }
+  .container {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    position: relative;
+    width: 90%px;
+    height: 50%;
+    padding-top: 25px;
+    border-radius: 0px;
+    box-shadow: 0 0 6px 6px rgb(206, 202, 202);
+  }
+  .card-header {
+    background-color: white;
+  }
+  .card-body {
+    height: 230px;
+  }
+  
+  .input-1 {
+    float: right;
+    display: flex;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .input-1 input {
+    height: 22px;
+    width: 200px;
+    padding-left: 20px;
+    margin-left: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+  .input-1 input:focus{
+    border-bottom: 2px solid #049789;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+  }
+
+  .input-4 {
+    position: absolute;
+    left: 43%;
+    top: 45%;
+  }
+  
+  

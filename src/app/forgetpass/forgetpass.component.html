@@ -1,0 +1,65 @@
+<div class="navbar">
+  <ul>
+    <li>
+      <button>
+        <a
+          href="#"
+          style="font-family: 'Arial', 'Helvetica', sans-serif; font-size: 16px"
+          >EW POS</a
+        >
+      </button>
+    </li>
+    <li>
+      <button><a href="#">Products</a></button>
+    </li>
+    <li>
+      <button><a href="#">Log in</a></button>
+    </li>
+  </ul>
+</div>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Forget Password.</h3>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+      <div style="width: 350px; height: 200px; position: relative; left: 10%">
+        <div style="display: block">
+            <span style="  color: rgb(255, 71, 71);
+            font-size: 13px;
+            font-weight: none; float: left;" *ngIf="user && user.invalid && user.touched"
+            ><ul><li>Email Address is Required.</li></ul></span
+          >
+          <div class="input-1">
+         
+            <p>EmailId</p>
+            <input type="text" name="user" formControlName="user" />
+          </div>
+        </div>
+
+        <div style="display: block">
+          <div class="input-4">
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="
+                border: none;
+                width: 100px;
+                font-size: 12px;
+                color: rgba(255, 255, 255, 0.84);
+                background-color: #009688;
+                border-radius: 2px;
+              "
+              >RESET</a
+            >
+          </div>
+        </div>
+   
+
+      </div>
+    </form>
+    </div>
+
+  </div>
+</div>
