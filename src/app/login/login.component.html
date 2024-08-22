@@ -2,11 +2,7 @@
   <ul>
     <li>
       <button>
-        <a
-          href="#"
-          style="font-family: 'Arial', 'Helvetica', sans-serif; font-size: 16px"
-          >EW POS</a
-        >
+        <a href="#" style="font-family: 'Arial', 'Helvetica', sans-serif; font-size: 16px">EW POS</a>
       </button>
     </li>
     <li>
@@ -36,40 +32,29 @@
           <div style="display: block">
             <div class="input-2">
               <p style="margin: 0px; padding: 0px">Password</p>
-              <input
-                type="password"
-                name="password"
-                formControlName="password"
-              />
+              <input type="password" name="password" formControlName="password" />
             </div>
           </div>
           <div style="display: block">
             <div class="input-3" style="display: block">
               <p>
-                <span *ngIf="pass && pass.invalid && pass.touched"
-                  >The Password field is Required.</span
-                ><a [routerLink]="['/ForgetPassword']" style="color: #009688">Forgot Password</a>
-                <router-outlet></router-outlet>
-                
+                <span *ngIf="pass && pass.invalid && pass.touched">The Password field is Required.</span><a
+                (click)="goToForget()"  style="color: #009688">Forgot Password</a>
+
               </p>
             </div>
           </div>
 
           <div style="display: block">
             <div class="input-4">
-              <a
-                href="#"
-                class="btn btn-primary"
-                style="
+              <a href="#" class="btn btn-primary" style="
                   border: none;
                   width: 100px;
                   font-size: 12px;
                   color: rgba(255, 255, 255, 0.84);
                   background-color: #009688;
                   border-radius: 2px;
-                "
-                >LOG IN</a
-              >
+                ">LOG IN</a>
             </div>
           </div>
         </div>
@@ -77,4 +62,3 @@
     </div>
   </div>
 </div>
-

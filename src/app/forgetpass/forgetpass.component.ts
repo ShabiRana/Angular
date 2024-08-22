@@ -20,5 +20,6 @@ export class ForgetpassComponent {
   }
   get user() {
     return this.loginForm.get('user');
-  }
+  };
+ 
 }

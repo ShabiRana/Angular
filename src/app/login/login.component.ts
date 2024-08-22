@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
-import {RouterModule, Routes} from '@angular/router'
+import {Router, RouterModule, Routes} from '@angular/router'
 import {FormControl,Validators, FormGroup } from '@angular/forms';
 import {NgFor, NgIf} from '@angular/common'
+
+
+
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -16,11 +20,17 @@ export class LoginComponent {
   loginForm=new FormGroup({
     user: new FormControl(''),
     password: new FormControl('',[Validators.required]),
-  })
+  });
+constructor(
+  public router: Router,
+) {}
   loginUser(){
     console.warn(this.loginForm.value)
   }
   get pass(){
     return this.loginForm.get('password');
-  }
+  };
+  goToForget(){
+    this.router.navigateByUrl('/forget-password');
+ }
 }
